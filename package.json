@@ -41,12 +41,12 @@
   },
   "peerDependencies": {
     "discord.js": "^14.0.0",
-    "permsy": "1.0.0"
+    "permsy": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.7.5",
     "discord.js": "^14.16.3",
-    "permsy": "1.0.0",
+    "permsy": "^1.0.0",
     "tsup": "^8.3.0",
     "typescript": "^5.6.3"
   }
