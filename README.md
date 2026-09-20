@@ -13,50 +13,51 @@ This adapter bridges Discord.js events (Slash Commands and Prefix Messages) with
 * TypeScript Support: Built with TypeScript, providing full type safety out of the box.
 
 ---
-
 ## Installation
 
-Install @permsy/adapter-discordjs:
+Install `@permsy/adapter-discordjs`:
 
+```bash
 npm install @permsy/adapter-discordjs
+```
 
-Note: This package requires permsy and discord.js to be installed in your project
+Note: *This package requires permsy and discord.js to be installed in your project*
 
 ---
 
 ## Quick Start
 
-1. Initialize Permsy with the Adapter
-
+### 1. Initialize Permsy with the Adapter
+```js
 import { Permsy } from "permsy";
 import { DiscordJsAdapter } from "@permsy/adapter-discordjs";
 
 const adapter = new DiscordJsAdapter();
 
 const permsy = new Permsy({
-adapter,
-configDir: "./",
-fileName: "permsy.config.js"
+  adapter,
+  configDir: "./",
+  fileName: "permsy.config.js"
 });
-
-2. Usage with Slash Commands
+```
+### 2. Usage with Slash Commands
 
 Pass the interaction object directly as the source when handling slash commands:
-
+```js
 client.on("interactionCreate", async (interaction) => {
 if (!interaction.isChatInputCommand()) return;
 
 const isAllowed = await permsy.isAllowed(interaction);
 
 if (!isAllowed) return;
-
-//
+  //
 });
+```
 
-3. Usage with Prefix Commands
+### 3. Usage with Prefix Commands
 
 Pass the message alongside the resolved commandName:
-
+```js
 client.on("messageCreate", async (message) => {
 if (message.author.bot || !message.content.startsWith("!")) return;
 
@@ -66,15 +67,14 @@ const commandName = args.shift()?.toLowerCase();
 if (!commandName) return;
 
 const isAllowed = await permsy.isAllowed({
-message,
-commandName,
+  message,
+  commandName,
 });
 
 if (!isAllowed) return;
-
-//
+  //
 });
-
+```
 ---
 
 ## License
