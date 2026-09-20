@@ -31,13 +31,13 @@
   ],
   "author": "Ümit ULUSOY",
   "license": "MIT",
-  "homepage": "https://github.com/umit-Ulusoy/permsy-adapter-discordjs#readme",
+  "homepage": "https://github.com/Umit-Ulusoy/permsy-adapter-discordjs#readme",
   "bugs": {
-    "url": "https://github.com/umit-Ulusoy/permsy-adapter-discordjs/issues"
+    "url": "https://github.com/Umit-Ulusoy/permsy-adapter-discordjs/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/umit-Ulusoy/permsy-adapter-discordjs.git"
+    "url": "git+https://github.com/Umit-Ulusoy/permsy-adapter-discordjs.git"
   },
   "peerDependencies": {
     "discord.js": "^14.0.0",
