@@ -1,6 +1,6 @@
 {
   "name": "@permsy/adapter-discordjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official Discord.js adapter for the Permsy permission management engine.",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -31,22 +31,22 @@
   ],
   "author": "Ümit ULUSOY",
   "license": "MIT",
-  "homepage": "https://github.com/umit-Ulusoy/permsy-adapter-discordjs#readme",
+  "homepage": "https://github.com/Umit-Ulusoy/permsy-adapter-discordjs#readme",
   "bugs": {
-    "url": "https://github.com/umit-Ulusoy/permsy-adapter-discordjs/issues"
+    "url": "https://github.com/Umit-Ulusoy/permsy-adapter-discordjs/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/umit-Ulusoy/permsy-adapter-discordjs.git"
+    "url": "git+https://github.com/Umit-Ulusoy/permsy-adapter-discordjs.git"
   },
   "peerDependencies": {
     "discord.js": "^14.0.0",
-    "permsy": "1.0.0"
+    "permsy": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.7.5",
     "discord.js": "^14.16.3",
-    "permsy": "1.0.0",
+    "permsy": "^1.0.0",
     "tsup": "^8.3.0",
     "typescript": "^5.6.3"
   }
